@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyMood ☁️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ SkyMood</h1>
+    <div class="dropdowns">
+      <select id="stateSelect">
+        <option>Select State</option>
+      </select>
+      <select id="citySelect">
+        <option>Select City</option>
+      </select>
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <div id="weatherResult" class="hidden">
+      <h2 id="cityName"></h2>
+      <div id="weatherIcon" class="emoji"></div>
+      <div id="temperature"></div>
+      <div id="condition"></div>
+
+      <h3>Next 24 Hours</h3>
+      <div id="hourlyForecast" class="forecast"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
